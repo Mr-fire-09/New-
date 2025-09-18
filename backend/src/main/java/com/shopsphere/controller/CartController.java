@@ -15,7 +15,7 @@ import java.util.Map;
 
 @CrossOrigin(origins = "*", maxAge = 3600)
 @RestController
-@RequestMapping("/cart")
+@RequestMapping("/api/cart")
 public class CartController {
     
     @Autowired

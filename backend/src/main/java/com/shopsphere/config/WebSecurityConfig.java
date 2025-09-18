@@ -64,9 +64,11 @@ public class WebSecurityConfig {
             .exceptionHandling(exception -> exception.authenticationEntryPoint(unauthorizedHandler))
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(auth -> 
-                auth.requestMatchers("/auth/**").permitAll()
-                    .requestMatchers("/products/**").permitAll()
-                    .requestMatchers("/admin/**").hasRole("ADMIN")
+                auth.requestMatchers("/", "/index.html", "/products.html", "/cart.html", "/admin.html",
+                        "/css/**", "/js/**", "/images/**", "/**/*.jpg", "/**/*.png", "/**/*.jpeg").permitAll()
+                    .requestMatchers("/api/auth/**").permitAll()
+                    .requestMatchers("/api/products/**").permitAll()
+                    .requestMatchers("/api/orders/admin/**").hasRole("ADMIN")
                     .anyRequest().authenticated()
             );
         

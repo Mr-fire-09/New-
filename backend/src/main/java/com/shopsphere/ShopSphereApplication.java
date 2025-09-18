@@ -1,5 +1,7 @@
 package com.shopsphere;
 
+import java.math.BigDecimal;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,8 +9,6 @@ import org.springframework.context.annotation.Bean;
 
 import com.shopsphere.entity.Product;
 import com.shopsphere.repository.ProductRepository;
-
-import java.math.BigDecimal;
 
 @SpringBootApplication
 public class ShopSphereApplication {

@@ -79,3 +79,10 @@ INSERT INTO products (name, description, price, stock, image_url, category) VALU
 ('Bluetooth Speaker', 'Portable Bluetooth speaker with great sound quality', 79.99, 60, 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=300', 'Electronics'),
 ('Water Bottle', 'Insulated water bottle to keep drinks cold', 24.99, 120, 'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=300', 'Sports'),
 ('Backpack', 'Durable backpack for travel and daily use', 59.99, 80, 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300', 'Accessories');
+
+
+SELECT * FROM products;
+SELECT * FROM users;
+SELECT * FROM orders;
+SELECT * FROM order_items;
+SELECT * FROM cart_items;

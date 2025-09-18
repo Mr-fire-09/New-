@@ -2,6 +2,8 @@
 
 A complete e-commerce web application built with Spring Boot backend, HTML/CSS/JavaScript frontend, and MySQL database.
 
+**Founded by Neeraj Singh**
+
 ## Features
 
 - **Product Catalog**: Browse all products with images, descriptions, and prices

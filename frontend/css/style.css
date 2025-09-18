@@ -771,6 +771,16 @@ p {
     color: #ccc;
 }
 
+.footer-contact-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(255,255,255,0.4);
+    margin: 0.5rem 0 0.25rem 0;
+    display: inline-block;
+}
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
@@ -780,6 +790,97 @@ p {
 @keyframes slideIn {
     from { transform: translateY(-50px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
+}
+
+/* Founder Section */
+.founder-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 80px 0;
+    margin: 60px 0;
+}
+
+.founder-content {
+    text-align: center;
+}
+
+.founder-info h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+.founder-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.founder-avatar {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founder-avatar img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.founder-details h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.founder-title {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.founder-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #f0f0f0;
+    margin-bottom: 0;
+}
+
+.founder-socials {
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.founder-socials a {
+    color: #fff;
+    background: rgba(255,255,255,0.15);
+    padding: 8px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.founder-socials a:hover {
+    background: rgba(255,255,255,0.25);
+    transform: translateY(-2px);
 }
 
 /* Responsive Design */
@@ -892,6 +993,19 @@ p {
 
     .features-grid {
         grid-template-columns: 1fr;
+    }
+
+    .founder-card {
+        padding: 2rem;
+        margin: 0 1rem;
+    }
+
+    .founder-info h2 {
+        font-size: 2rem;
+    }
+
+    .founder-details h3 {
+        font-size: 1.5rem;
     }
 
     .footer-content {
